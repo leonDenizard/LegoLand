@@ -209,7 +209,7 @@ main .shortcut .shortcut-bag > .material-symbols-outlined{
 main .shortcut .shortcut-bag > .material-symbols-outlined:nth-child(3){
   background-color: transparent;
   color: #bfc0c0;
-  margin-left: 80px
+  margin-left: 40px;
 }
 
 /* Aside filter */
@@ -273,6 +273,29 @@ main .aside-filter .aside-price .aside-price-content p > span{
   background-color: #ef233c;
   border-radius: 50%;
   
+}
+
+.aside-filter .theme .header-theme{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.aside-filter .theme .header-theme span{
+  margin-top: 40px;
+  font-weight: 600;
+  
+}
+
+.aside-filter .theme .theme-itens{
+  outline: none;
+  color: #bfc0c0;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.aside-filter .theme .theme-itens div{
+  margin-bottom: 10px;
 }
 
 
