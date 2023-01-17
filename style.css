@@ -280,10 +280,11 @@ main .aside-filter .aside-price .aside-price-content p > span{
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  
 }
 .aside-filter .theme .header-theme span{
   margin-top: 40px;
-  font-weight: 600;
+  font-weight: 500;
   
 }
 
@@ -292,13 +293,67 @@ main .aside-filter .aside-price .aside-price-content p > span{
   color: #bfc0c0;
   font-size: 1rem;
   font-weight: 400;
+  height: 150px;
+  overflow-y: scroll;
+  margin-right: 10px;
+
+}
+.aside-filter .theme .theme-itens:nth-child(2){
+  overflow-y: auto;
+}
+
+.aside-filter .theme .theme-itens::-webkit-scrollbar{
+  
+  width: 5px;
+  background-color: #bfc0c0;
+  border-radius: 5px;
+}
+.aside-filter .theme .theme-itens::-webkit-scrollbar-thumb{
+  
+  background-color: #ef233c;
+  height: 10px;
+  border-radius: 5px;
+
 }
 
 .aside-filter .theme .theme-itens div{
+  display: flex;
+  align-items: center;
   margin-bottom: 10px;
+
+  
 }
-
-
+.aside-filter .theme .theme-itens div input[type="checkbox"]{
+  position: relative;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background-color: #e5e5e5;
+  margin-right: 10px;
+  border-radius: 2px;
+  transition: all 150ms ease-in;
+  cursor: pointer;
+}
+.aside-filter .theme .theme-itens div input[type="checkbox"]:checked{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ef233c;
+}
+.aside-filter .theme .theme-itens div input[type="checkbox"]:checked+label{
+  color: #000;
+}
+.aside-filter .theme .theme-itens div input[type="checkbox"]:checked::before{
+  position: absolute;
+  content: '';
+  rotate: 45deg;
+  width: 3px;
+  height: 7px;
+  border-right: solid 1px #ffff;
+  border-bottom: solid 1px #ffff;
+  color: #ffff;
+  margin-top: -2px;
+}
 
 
 
