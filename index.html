@@ -75,116 +75,136 @@
                 
 
         </div>
-
-        <aside class="aside-filter">
-            <h3>Price</h3>
-            <div class="aside-price">
-                <div class="aside-price-content">
-                    <p>From <span id="price">200</span> $</p>
+        <section class="wrapper-section">
+            <aside class="aside-filter">
+                <h3>Price</h3>
+                <div class="aside-price">
+                    <div class="aside-price-content">
+                        <p>From <span id="price">200</span> $</p>
+                    </div>
+                    <div class="aside-price-content">
+                        <p>Up to <span>9000</span> $</p>
+                    </div>
                 </div>
-                <div class="aside-price-content">
-                    <p>Up to <span>9000</span> $</p>
+    
+                <div class="aside-range">
+                    <input class="range" value="0" type="range" min="0" max="1000" step="10">
                 </div>
-            </div>
-
-            <div class="aside-range">
-                <input class="range" value="0" type="range" min="0" max="1000" step="10">
-            </div>
-
-            <div class="theme">
-                <div class="header-theme">
-                    <h3>Theme</h3>
-                    <span class="material-symbols-outlined">expand_less</span>
-                </div>
-                <div class="theme-itens">
-                    <div>
-                        <input class="itens" type="checkbox" name="space" id="space">
-                        <label for="#">Space (44)</label>
+    
+                <div class="theme">
+                    <div class="header-theme">
+                        <h3>Theme</h3>
+                        <span class="material-symbols-outlined">expand_less</span>
                     </div>
-                    <div>
-                        <input class="itens" type="checkbox" name="ninja" id="ninja">
-                        <label for="#">Ninja (44)</label>
+                    <div class="theme-itens">
+                        <div>
+                            <input class="itens" type="checkbox" name="space" id="space">
+                            <label for="#">Space (44)</label>
+                        </div>
+                        <div>
+                            <input class="itens" type="checkbox" name="ninja" id="ninja">
+                            <label for="#">Ninja (44)</label>
+                        </div>
+                        <div>
+                            <input class="itens" type="checkbox" name="transport" id="transport" checked>
+                            <label for="transport">Transport (44)</label>
+                        </div>
+                        <div>
+                            <input class="itens" type="checkbox" name="buildings" id="buildings">
+                            <label for="#">Buildings (44)</label>
+                        </div>
+                        <div>
+                            <input class="itens" type="checkbox" name="homes" id="homes">
+                            <label for="#">Homes (44)</label>
+                        </div>
+                        <div>
+                            <input class="itens" type="checkbox" name="games" id="games">
+                            <label for="#">Games (44)</label>
+                        </div>
+                        <div>
+                            <input class="itens" type="checkbox" name="games" id="games">
+                            <label for="#">Games (44)</label>
+                        </div>
+                        <div>
+                            <input class="itens" type="checkbox" name="games" id="games">
+                            <label for="#">Games (44)</label>
+                        </div>
+                        <div>
+                            <input class="itens" type="checkbox" name="games" id="games">
+                            <label for="#">Games (44)</label>
+                        </div>
                     </div>
-                    <div>
-                        <input class="itens" type="checkbox" name="transport" id="transport" checked>
-                        <label for="transport">Transport (44)</label>
-                    </div>
-                    <div>
-                        <input class="itens" type="checkbox" name="buildings" id="buildings">
-                        <label for="#">Buildings (44)</label>
-                    </div>
-                    <div>
-                        <input class="itens" type="checkbox" name="homes" id="homes">
-                        <label for="#">Homes (44)</label>
-                    </div>
-                    <div>
-                        <input class="itens" type="checkbox" name="games" id="games">
-                        <label for="#">Games (44)</label>
-                    </div>
-                    <div>
-                        <input class="itens" type="checkbox" name="games" id="games">
-                        <label for="#">Games (44)</label>
-                    </div>
-                    <div>
-                        <input class="itens" type="checkbox" name="games" id="games">
-                        <label for="#">Games (44)</label>
-                    </div>
-                    <div>
-                        <input class="itens" type="checkbox" name="games" id="games">
-                        <label for="#">Games (44)</label>
-                    </div>
+                    
                 </div>
                 
-            </div>
+                <div class="theme">
+                    <div class="header-theme">
+                        <h3>Age</h3>
+                        <span class="material-symbols-outlined">expand_less</span>
+                    </div>
+                    <div class="theme-itens">
+                        <div>
+                            <input class="itens" type="checkbox" name="upToYear" id="upToYear">
+                            <label for="#">Up to a year</label>
+                        </div>
+                        <div>
+                            <input class="itens" type="checkbox" name="oneYear" id="oneYear">
+                            <label for="#">1 year - 2 year</label>
+                        </div>
+                        <div>
+                            <input class="itens" type="checkbox" name="threeYear " id="threeYear">
+                            <label for="#">3 years - 5 years</label>
+                        </div>
+                        <div>
+                            <input class="itens" type="checkbox" name="sixYear" id="sixYear">
+                            <label for="#">6 years - 10 years</label>
+                        </div>
+                        <div>
+                            <input class="itens" type="checkbox" name="olderYears" id="olderYears" checked>
+                            <label for="older">Older than 12 years</label>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="moreFilter">
+                    <div class="moreFilterText">
+                        <span>Brand</span> 
+                        <span class="material-symbols-outlined">expand_more</span>
+                    </div> 
+                    <div class="moreFilterText">
+                        <span>Characters</span> 
+                        <span class="material-symbols-outlined">expand_more</span>
+                    </div> 
+                    <div class="moreFilterText">
+                        <span>Stock availability</span> 
+                        <span class="material-symbols-outlined">expand_more</span>
+                    </div> 
+                    <div class="buttons">
+                        <button type="submit">Apply filter</button>
+                        <span><i class="ph-trash-simple-bold"></i></span>
+                    </div>
+                </div>
+            </aside>
+            <section class="catalog-filter">
+                <h1>Catalog</h1>
+                <div class="search-filter">
+                    <div class="search">
+                        <i class="ph-magnifying-glass-bold"></i>
+                        <input type="text" placeholder="Seach among 100+ products">
+                    </div>
+                    <div class="search-popular">
+                        <i class="ph-funnel-simple-bold"></i>
+                        <input type="text" name="" id="" placeholder="Popular">
+                    </div>
+                    
+                </div>
+            </section>
             
-            <div class="theme">
-                <div class="header-theme">
-                    <h3>Age</h3>
-                    <span class="material-symbols-outlined">expand_less</span>
-                </div>
-                <div class="theme-itens">
-                    <div>
-                        <input class="itens" type="checkbox" name="upToYear" id="upToYear">
-                        <label for="#">Up to a year</label>
-                    </div>
-                    <div>
-                        <input class="itens" type="checkbox" name="oneYear" id="oneYear">
-                        <label for="#">1 year - 2 year</label>
-                    </div>
-                    <div>
-                        <input class="itens" type="checkbox" name="threeYear " id="threeYear">
-                        <label for="#">3 years - 5 years</label>
-                    </div>
-                    <div>
-                        <input class="itens" type="checkbox" name="sixYear" id="sixYear">
-                        <label for="#">6 years - 10 years</label>
-                    </div>
-                    <div>
-                        <input class="itens" type="checkbox" name="olderYears" id="olderYears" checked>
-                        <label for="older">Older than 12 years</label>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="moreFilter">
-                <div class="moreFilterText">
-                    <span>Brand</span> 
-                    <span class="material-symbols-outlined">expand_more</span>
-                </div> 
-                <div class="moreFilterText">
-                    <span>Characters</span> 
-                    <span class="material-symbols-outlined">expand_more</span>
-                </div> 
-                <div class="moreFilterText">
-                    <span>Stock availability</span> 
-                    <span class="material-symbols-outlined">expand_more</span>
-                </div> 
-                <div class="buttons">
-                    <button type="submit">Apply filter</button>
-                    <span><i class="ph-trash-simple-bold"></i></span>
-                </div>
-            </div>
-        </aside>
+            
+        </section>
+            
+       
+        
     </main>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
