@@ -502,7 +502,6 @@ main .wrapper-section .catalog-filter .search-filter .search input::placeholder{
 main .wrapper-section .catalog-filter .search-popular{
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
 }
 main .wrapper-section .catalog-filter .search-popular i{
   border: 2px solid #e5e5e5;
@@ -534,10 +533,10 @@ main .wrapper-section .catalog-filter .search-popular input{
 main .wrapper-section .catalog-filter .search-popular input::placeholder{
   color: #000;
 }
-
-main .wrapper-section .catalog-filter .hashtag{
- 
+main .wrapper-section .hashtag{
+  margin-top: 20px;
 }
+
 main .wrapper-section .catalog-filter span{
   display: inline-flex;
   align-items: center;
@@ -546,7 +545,7 @@ main .wrapper-section .catalog-filter span{
   padding: 5px 15px;
   background-color: #e5e5e5;
   font-size: 0.8em;
-  font-weight: 500;
+  font-weight: 400;
   cursor: pointer;
 }
 main .wrapper-section .catalog-filter span i{
@@ -555,7 +554,7 @@ main .wrapper-section .catalog-filter span i{
   align-items: center;
   margin-left: 10px;
   margin-top: 3px;
-  
+  scale: 0.85;
 }
 
 /* @media (max-width: 1800px) {
