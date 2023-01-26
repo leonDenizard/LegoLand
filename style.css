@@ -494,6 +494,7 @@ main .wrapper-section .catalog-filter .search-filter .search input{
   padding-left: 20px;
   font-size: 0.99em;
   color: #bfc0c0;
+  background-color: #faf9f9;
 }
 main .wrapper-section .catalog-filter .search-filter .search input::placeholder{
   color: #bfc0c0;
@@ -548,13 +549,9 @@ main .wrapper-section .catalog-filter span{
   font-weight: 400;
   cursor: pointer;
 }
-main .wrapper-section .catalog-filter span i{
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 10px;
-  margin-top: 3px;
-  scale: 0.85;
+main .wrapper-section .catalog-filter span.active{
+  display: none
+  
 }
 
 /* @media (max-width: 1800px) {
