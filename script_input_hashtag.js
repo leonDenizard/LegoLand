@@ -1,65 +1,56 @@
 const divHashtag = document.getElementById('div-hashtag')
-const labelText = document.querySelectorAll('label')
-const span = document.querySelectorAll('.hashtag > span')
-const itemCheckBox = document.querySelectorAll('.itens')
+const checkboxes = document.querySelectorAll('.itens')
 
 
-// for (const iterator of itemCheckBox) {
-//     var labelArray = []
-//     labelArray.push(iterator.attributes.name.nodeValue)
-//     console.log(labelArray[0].attributes)
-    
-// }
 
 
-function checkedBox(){
-    for (const iterator of itemCheckBox) {
-        let labelArray = []
-        labelArray.push(iterator.attributes.name.nodeValue)
-        
+let hashtags = ['transport', 'olderYears']
 
-        iterator.addEventListener('click', ()=>{
-            
-            if(iterator.checked === true){
-                criaSpan(labelArray[0])
-                
-            }else if(iterator.checked === false){
-                removeSpan()
-            }
-            
-            
-        })
-    
+function renderRashtags(){
+    let content = ''
+
+    for (const hashtag of hashtags) {
+        content += `<span style="margin-left: 5px" name="value"># ${hashtag}</span>`
+    }
+    divHashtag.innerHTML = content
+
+    const spans = document.querySelectorAll('span[name=value]')
+    for(const span of spans){
+        span.addEventListener('click', spanClick)
     }
 }
 
-checkedBox()
+renderRashtags()
 
-// function retornaTexto(){
-//     for(let label of labelText){
-//         let texto = label.innerText.replace('(44)', '').trim()
-//         label.addEventListener('click', function(){
-//             criaSpan(texto) 
-//         })
-//     }
-// }
-
-// retornaTexto()
-
-function criaSpan(texto){
-    const span = document.createElement('span')
-    span.innerText= `# ${texto}`
-    span.style.marginRight = '5px'
-    span.setAttribute('name', 'value')
-    divHashtag.appendChild(span)
+for (const checkbox of checkboxes) {
+    checkbox.addEventListener('change', checkboxChange)
 }
 
-function removeSpan(){
-    console.log(divHashtag)
-
-    const span = document.querySelector('span[name=value]')
-
+function checkboxChange(e){
+    const checked = e.target.checked
+    const name = e.target.name
+    console.log(e)
+    if(checked){
+        hashtags.push(name)
+    }else{
+        hashtags = hashtags.filter(hashtag => hashtag !== name)
     
-    divHashtag.removeChild(span)
-    
+    }
+
+    renderRashtags()
+
 }
+
+function spanClick(e){
+    const name = e.target.innerText.substring(2)
+
+
+    hashtags = hashtags.filter(hashtag => hashtag !== name)
+
+    const checkboxesArray = Array.from(checkboxes)
+    
+    checkboxesArray.find(checkbox => checkbox.name === name).checked = false
+
+    renderRashtags()
+}
+
