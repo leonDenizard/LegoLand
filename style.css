@@ -12,8 +12,11 @@
 body {
   background-color: #ef233c;
   padding: 60px 60px 0 60px;
+  transition: 0.5s;
 }
-
+.full-screen{
+  padding: 0;
+}
 body::-webkit-scrollbar{
   width: 12px;
   
@@ -111,11 +114,34 @@ main header nav ul li a .hot::before{
 
 
 main header .login{
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-right: 60px;
 }
+main header .login > #full-screen{
+  position: absolute;
+  font-size: 1rem;
+  padding: 5px;
+  cursor: pointer;
+  right: 0;
+  top: 0;
+  color: #6c757d;
+  
+}
+
+main header .login > span > span{
+  position: absolute;
+  font-size: 1rem;
+  padding: 5px;
+  cursor: pointer;
+  right: 0;
+  top: 0;
+  color: #6c757d;
+  
+}
+
 main header .login a{
   color: #000000;
   font-size: 0.94rem;
@@ -658,8 +684,7 @@ main .wrapper-section .section-products .wrapper-card .card-img > .img-product >
   
   max-width: 100%;
   filter: drop-shadow(0 15px 10px rgba(0,0,0,0.3));
-  margin-top: 20px;
-          
+  margin-top: 20px;      
           
 }
 main .wrapper-section .section-products .wrapper-card .product-detail{
