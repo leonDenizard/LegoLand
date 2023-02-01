@@ -295,20 +295,21 @@ main .aside-filter .aside-price .aside-price-content{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30px;
-  width: 100px;
+  height: 35px;
+  width: 100%;
   background-color: #e5e5e5;
   border-radius: 3px;
   margin-top: 10px;
 }
 
 main .aside-filter .aside-price .aside-price-content p{
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   color: #838383;
 }
 main .aside-filter .aside-price .aside-price-content p > span{
   color: #000;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  font-weight: 500;
 }
 
 .aside-filter .aside-range input[type='range']{
@@ -601,82 +602,109 @@ main .wrapper-section .catalog-filter span:hover::before{
   
 } */
 
+/* main .card-container{
+  height: 240px;
+  transition: 0.2s;
+}
+main .card-container:hover{
+  height: 100%;
+  transition: 0.2s;
+} */
 main .wrapper-section .section-products{
   margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 15px;
+  min-height: 900px;
 }
 
 main .wrapper-section .section-products .wrapper-card{
   max-width: 18rem;
   height: 25rem;
-  border: 2px solid #e5e5e5;
 }
 
 main .wrapper-section .section-products .wrapper-card .card-img{
   height: 50%;
-  border-bottom: 2px solid #e5e5e5;
+  border: 2px solid #e5e5e5;
 }
 
 main .wrapper-section .section-products .wrapper-card .card-img .icon-favorite{
-  position: absolute;
-  border: 2px solid #e5e5e5;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
-  transform: translate(230px, 5px);
 }
 main .wrapper-section .section-products .wrapper-card .card-img .icon-favorite > span{
   background-color: transparent;
   font-size: 1.4rem;
   font-weight: 600;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  margin: 5px;
 }
 
 
 main .wrapper-section .section-products .wrapper-card .card-img > .img-product{
   width: 100%;
   height: 100%;
+  margin-top: -50px;
   
 }
 main .wrapper-section .section-products .wrapper-card .card-img > .img-product > img{
+  
   max-width: 100%;
-  filter: drop-shadow(0 15px 10px rgba(0,0,0,0.3))
+  filter: drop-shadow(0 15px 10px rgba(0,0,0,0.3));
+  margin-top: 20px;
           
           
 }
-main .wrapper-section .section-products .wrapper-card .card-img .product-detail{
+main .wrapper-section .section-products .wrapper-card .product-detail{
   padding: 20px;
+  border: 2px solid #e5e5e5;
+  border-top: none;
+  /* transform: translateY(-200px);
+  transition: 0.3s;
+  opacity: 0; */
+  
 }
+/* main .wrapper-section .section-products .wrapper-card:hover .product-detail{
+  transform: translateY(0px);
+  opacity: 1;
+  
+} */
 
-main .wrapper-section .section-products .wrapper-card .card-img .product-detail p{
+
+
+
+main .wrapper-section .section-products .wrapper-card .product-detail p{
   color: #bfc0c0;
   font-size: 0.8rem;
   margin-top: 20px;
 }
 
-main .wrapper-section .section-products .wrapper-card .card-img .product-detail h4{
+main .wrapper-section .section-products .wrapper-card .product-detail h4{
   font-weight: 500;
   margin-top: 15px;
 }
 
-main .wrapper-section .section-products .wrapper-card .card-img .product-detail .product-price{
+main .wrapper-section .section-products .wrapper-card .product-detail .product-price{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-main .wrapper-section .section-products .wrapper-card .card-img .product-detail .product-price div > .price-off{
+main .wrapper-section .section-products .wrapper-card .product-detail .product-price div > .price-off{
   background-color: transparent;
   font-size: 1.2rem;
   font-weight: 600;
   padding: 0;
   margin-top: 10px;
 }
-main .wrapper-section .section-products .wrapper-card .card-img .product-detail .product-price div > .main-price{
+main .wrapper-section .section-products .wrapper-card .product-detail .product-price div > .main-price{
   background-color: transparent;
   font-size: 0.95rem;
   font-weight: 400;
@@ -686,7 +714,7 @@ main .wrapper-section .section-products .wrapper-card .card-img .product-detail 
   text-decoration: line-through;
   color: #bfc0c0;
 }
-main .wrapper-section .section-products .wrapper-card .card-img .product-detail div > span.bag-products{
+main .wrapper-section .section-products .wrapper-card .product-detail div > span.bag-products{
   background-color: #ef233c;
   border-radius: 50%;
   width: 40px;

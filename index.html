@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto DL</title>
+    <title>Lego Land</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png">
 </head>
 
 <body>
@@ -64,7 +64,7 @@
                 <div class="shortcutGrid-bag">
                     <div class="shortcut-bag">
                         <span class="material-symbols-outlined">shopping_bag</span>
-                        <span>2 Products - $1000</span>
+                        <span>2 Products - $<span id="valor-sacola">1000</span></span>
                         <span class="material-symbols-outlined">arrow_right_alt</span>
                     </div>
                 </div>
@@ -80,11 +80,9 @@
                 <h3>Price</h3>
                 <div class="aside-price">
                     <div class="aside-price-content">
-                        <p>From <span id="price">200</span> $</p>
+                        <p>Price <span id="price">200</span> $</p>
                     </div>
-                    <div class="aside-price-content">
-                        <p>Up to <span>9000</span> $</p>
-                    </div>
+                    
                 </div>
     
                 <div class="aside-range">
@@ -200,77 +198,22 @@
                                 <div class="img-product">
                                     <img src="./assets/carro01.png" alt="">
                                 </div>
+                            </div>
+
                                 <div class="product-detail">
                                     <p>Vendor code: 10521</p>
                                     <h4>bugatti bolide <br>collection</h4>
                                     <p>Price:</p>
                                     <div class="product-price">
                                         <div>
-                                            <span class="price-off">400 $</span>
+                                            <span id="valor" class="price-off">400 $</span>
                                             <span class="main-price">600 $</span>
                                         </div>
-                                        <span class="material-symbols-outlined bag-products">shopping_bag</span>
+                                        <span id="botao-sacola" class="material-symbols-outlined bag-products">shopping_bag</span>
                                     </div>
                                 </div>
                                 
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- outro card -->
-
-                    <div class="card-container">
-                        <div class="wrapper-card">
-                            <div class="card-img">
-                                <div class="icon-favorite">
-                                    <span class="material-symbols-outlined">favorite</span>
-                                </div>
-                                
-                                <div class="img-product">
-                                    <img src="./assets/carro01.png" alt="">
-                                </div>
-                                <div class="product-detail">
-                                    <p>Vendor code: 10521</p>
-                                    <h4>bugatti bolide <br>collection</h4>
-                                    <p>Price:</p>
-                                    <div class="product-price">
-                                        <div>
-                                            <span class="price-off">400 $</span>
-                                            <span class="main-price">600 $</span>
-                                        </div>
-                                        <span class="material-symbols-outlined bag-products">shopping_bag</span>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <!-- outro card -->
-
-                    <div class="card-container">
-                        <div class="wrapper-card">
-                            <div class="card-img">
-                                <div class="icon-favorite">
-                                    <span class="material-symbols-outlined">favorite</span>
-                                </div>
-                                
-                                <div class="img-product">
-                                    <img src="./assets/carro01.png" alt="">
-                                </div>
-                                <div class="product-detail">
-                                    <p>Vendor code: 10521</p>
-                                    <h4>bugatti bolide <br>collection</h4>
-                                    <p>Price:</p>
-                                    <div class="product-price">
-                                        <div>
-                                            <span class="price-off">400 $</span>
-                                            <span class="main-price">600 $</span>
-                                        </div>
-                                        <span class="material-symbols-outlined bag-products">shopping_bag</span>
-                                    </div>
-                                </div>
-                                
-                            </div>
+                            
                         </div>
                     </div>
 
@@ -284,6 +227,8 @@
                                 <div class="img-product">
                                     <img src="./assets/carro01.png" alt="">
                                 </div>
+                            </div>
+
                                 <div class="product-detail">
                                     <p>Vendor code: 10521</p>
                                     <h4>bugatti bolide <br>collection</h4>
@@ -297,11 +242,9 @@
                                     </div>
                                 </div>
                                 
-                            </div>
+                            
                         </div>
                     </div>
-
-                    <!-- outro card -->
 
                     <div class="card-container">
                         <div class="wrapper-card">
@@ -313,6 +256,8 @@
                                 <div class="img-product">
                                     <img src="./assets/carro01.png" alt="">
                                 </div>
+                            </div>
+
                                 <div class="product-detail">
                                     <p>Vendor code: 10521</p>
                                     <h4>bugatti bolide <br>collection</h4>
@@ -326,10 +271,9 @@
                                     </div>
                                 </div>
                                 
-                            </div>
+                            
                         </div>
                     </div>
-                    <!-- outro card -->
 
                     <div class="card-container">
                         <div class="wrapper-card">
@@ -341,6 +285,8 @@
                                 <div class="img-product">
                                     <img src="./assets/carro01.png" alt="">
                                 </div>
+                            </div>
+
                                 <div class="product-detail">
                                     <p>Vendor code: 10521</p>
                                     <h4>bugatti bolide <br>collection</h4>
@@ -354,10 +300,67 @@
                                     </div>
                                 </div>
                                 
-                            </div>
+                            
                         </div>
                     </div>
-                    
+
+                    <div class="card-container">
+                        <div class="wrapper-card">
+                            <div class="card-img">
+                                <div class="icon-favorite">
+                                    <span class="material-symbols-outlined">favorite</span>
+                                </div>
+                                
+                                <div class="img-product">
+                                    <img src="./assets/carro01.png" alt="">
+                                </div>
+                            </div>
+
+                                <div class="product-detail">
+                                    <p>Vendor code: 10521</p>
+                                    <h4>bugatti bolide <br>collection</h4>
+                                    <p>Price:</p>
+                                    <div class="product-price">
+                                        <div>
+                                            <span class="price-off">400 $</span>
+                                            <span class="main-price">600 $</span>
+                                        </div>
+                                        <span class="material-symbols-outlined bag-products">shopping_bag</span>
+                                    </div>
+                                </div>
+                                
+                            
+                        </div>
+                    </div>
+
+                    <div class="card-container">
+                        <div class="wrapper-card">
+                            <div class="card-img">
+                                <div class="icon-favorite">
+                                    <span class="material-symbols-outlined">favorite</span>
+                                </div>
+                                
+                                <div class="img-product">
+                                    <img src="./assets/carro01.png" alt="">
+                                </div>
+                            </div>
+
+                                <div class="product-detail">
+                                    <p>Vendor code: 10521</p>
+                                    <h4>bugatti bolide <br>collection</h4>
+                                    <p>Price:</p>
+                                    <div class="product-price">
+                                        <div>
+                                            <span class="price-off">400 $</span>
+                                            <span class="main-price">600 $</span>
+                                        </div>
+                                        <span class="material-symbols-outlined bag-products">shopping_bag</span>
+                                    </div>
+                                </div>
+                                
+                            
+                        </div>
+                    </div>
                 </section>
             </section>
             
@@ -373,6 +376,7 @@
     <script src="https://unpkg.com/phosphor-icons"></script>
     <script src="script_slider_range.js"></script>
     <script src="script_input_hashtag.js"></script>
+    <script src="script_count_products.js"></script>
 </body>
 
 </html>
