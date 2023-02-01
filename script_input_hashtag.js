@@ -10,7 +10,7 @@ function renderRashtags(){
     let content = ''
 
     for (const hashtag of hashtags) {
-        content += `<span style="margin-left: 5px" name="value"># ${hashtag}</span>`
+        content += `<span style="margin-right: 5px" name="value"># ${hashtag}</span>`
     }
     divHashtag.innerHTML = content
 
@@ -29,7 +29,6 @@ for (const checkbox of checkboxes) {
 function checkboxChange(e){
     const checked = e.target.checked
     const name = e.target.name
-    console.log(e)
     if(checked){
         hashtags.push(name)
     }else{
