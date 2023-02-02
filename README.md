@@ -7,6 +7,8 @@ https://dribbble.com/shots/17003457-Online-store-Lego-Land
 3) Abrir arquivos no visual studio
 2) Executar com live server o index.html ou acessar via https://leondenizard.github.io/LegoLand/
 
+* Site não foi desenvolvido para ser mobile
+
 <h4>Funcionalidades criadas:</h4>
 
 1) Range de preço é dinâmico
