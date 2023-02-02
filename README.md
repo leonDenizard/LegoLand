@@ -6,6 +6,7 @@ https://dribbble.com/shots/17003457-Online-store-Lego-Land
 1) Baixar o zip ou realizar git clone para sua máquina local
 3) Abrir arquivos no visual studio
 2) Executar com live server o index.html
+4) Acessar via https://leondenizard.github.io/LegoLand/
 
 <h4>Funcionalidades criadas:</h4>
 
